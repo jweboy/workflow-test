@@ -34,3 +34,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      - name: easy-webhook
+        uses: TNT-Likely/webhook-action@V0.1.0
+        env:
+          webhookUrl: ${{ secrets.WEBHOOK_URL }}
+          webhookSecret: ${{ secrets.WEBHOOK_SECRET }}
+          data: '{"msg_type": "text","content": {"text":"test data"}}'
