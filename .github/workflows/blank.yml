@@ -40,4 +40,4 @@ jobs:
         uses: jasongitmail/fast-webhook@v1
         with:
           url: ${{ secrets.WEBHOOK_URL }}
-          json: '{"msg_type":"post","content":{"post":{"zh_cn":{"title":"项目更新通知","content":[[{"tag":"text","text":"项目有更新: "},{"tag":"a","text":"请查看","href":"http://www.example.com/"},{"tag":"at","user_id":"ou_18eac8********17ad4f02e8bbbb"}]]}}}}'
+          json: '{"msg_type":"interactive","card":{"elements":[{"tag":"markdown","content":"项目名：diamond_web\n构建人：[@jweboy](@jweboy)\n状态：✅构建成功"},{"tag":"action","actions":[{"tag":"button","text":{"tag":"plain_text","content":"跳转到流水线"},"type":"primary","multi_url":{"url":"https://github.com/kinsey-jweboy/diamond_web/actions","pc_url":"","android_url":"","ios_url":""}}]}],"header":{"template":"blue","title":{"content":"部署结果","tag":"plain_text"}}}}'
