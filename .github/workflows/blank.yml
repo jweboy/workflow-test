@@ -36,8 +36,8 @@ jobs:
           echo test, and deploy your project.
 
       # Notify douyin robot
-      - name: easy-webhook
+      - name: Notify trigger
         uses: zzzze/webhook-trigger@master
         with:
           webhook_url: ${{ secrets.WEBHOOK_URL }}
-          data: "{\"msg_type\":\"text\"}"
+          data: '{"msg_type":"text","content":{"text":"request example"}}'
