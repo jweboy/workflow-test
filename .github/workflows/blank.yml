@@ -37,7 +37,7 @@ jobs:
 
       # Notify douyin robot
       - name: Notify trigger
-        uses: zzzze/webhook-trigger@master
+        uses: jasongitmail/fast-webhook@v1
         with:
-          webhook_url: ${{ secrets.WEBHOOK_URL }}
-          data: '{"msg_type":"text","content":{"text":"request example"}}'
+          url: ${{ secrets.WEBHOOK_URL }}
+          json: '{"msg_type":"text","content":{"text":"request example"}}'
