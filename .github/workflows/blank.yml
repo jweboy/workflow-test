@@ -40,4 +40,4 @@ jobs:
         uses: zzzze/webhook-trigger@master
         with:
           webhook_url: ${{ secrets.WEBHOOK_URL }}
-          data: '{"msg_type":"text","content":{"text":"request example"}}'
+          data: '{\"msg_type\":\"text\",\"content\":{\"text\":\"request example\"}}'
