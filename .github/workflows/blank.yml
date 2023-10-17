@@ -40,4 +40,4 @@ jobs:
         uses: jasongitmail/fast-webhook@v1
         with:
           url: ${{ secrets.WEBHOOK_URL }}
-          json: '{"msg_type":"text","content":{"text":"request example"}}'
+          json: '{"msg_type":"text","content":[{"tag":"text","text":"项目有更新: "},{"tag":"a","text":"请查看","href":"http://www.example.com/"},{"tag":"at","user_id":"ou_18eac8********17ad4f02e8bbbb"}]}'
